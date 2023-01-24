@@ -2,12 +2,13 @@
 //* Для генерации случайного цвета используй функцию getRandomHexColor.
 
 const btnEl = document.querySelector(".change-color");
-
 const docEl = document.querySelector("body");
+const outputEl = document.querySelector(".color");
 
 btnEl.addEventListener("click", (event) => {
   if (event.target.nodeName === "BUTTON") {
     docEl.style.backgroundColor = getRandomHexColor();
+    outputEl.textContent = getRandomHexColor();
   }
 });
 

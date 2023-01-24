@@ -28,26 +28,3 @@ formEl.addEventListener("submit", (event) => {
   });
   console.log(obj);
 });
-
-// const formEl = document.querySelector(".login-form");
-
-// const buttonEl = document.querySelector(".login-form button");
-// const elementsEl = formEl.elements;
-// const inputsEl = document.querySelectorAll(".login-form input");
-
-// formEl.addEventListener("submit", (event) => {
-//   event.preventDefault();
-
-//   const formData = [...event.currentTarget.formEl].reduce(
-//     (formData, { element, value }) => {
-//       if (!value) {
-//         return alert("Bсе поля должны быть заполнены");
-//       }
-//       element = value;
-//       event.currentTarget.reset();
-//       return formData;
-//     },
-//     {}
-//   );
-//   console.log(formData);
-// });

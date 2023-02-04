@@ -45,5 +45,3 @@ const markup = images
   .join("");
 
 galleryEl.insertAdjacentHTML("beforeend", markup);
-
-const listEl = document.querySelector(".item-gallery");

@@ -7,6 +7,7 @@ rangeEl.valueAsNumber = textEl.style.fontSize;
 
 rangeEl.addEventListener("input", handleSize);
 console.dir(rangeEl);
+
 function handleSize(event) {
   textEl.style.fontSize = event.target.value + "px";
 }

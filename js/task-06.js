@@ -7,7 +7,7 @@ const formInputEl = document.querySelector("#validation-input");
 formInputEl.addEventListener("blur", onInput);
 
 function onInput(event) {
-  formInputEl.classList = "";
+  formInputEl.classList.remove();
   if (event.currentTarget.value.length === +formInputEl.dataset.length) {
     formInputEl.classList.add("valid");
   } else {

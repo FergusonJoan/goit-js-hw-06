@@ -8,13 +8,7 @@
 
 const formEl = document.querySelector(".login-form");
 
-const buttonEl = document.querySelector(".login-form button");
-const elementsEl = formEl.elements;
-const inputsEl = document.querySelectorAll(".login-form input");
-
-console.log(inputsEl);
-
-formEl.addEventListener("submit", (event) => {
+const handlerSumbit = (event) => {
   event.preventDefault();
   const formData = new FormData(formEl);
   const obj = {};
@@ -27,4 +21,6 @@ formEl.addEventListener("submit", (event) => {
     event.currentTarget.reset();
   });
   console.log(obj);
-});
+};
+
+formEl.addEventListener("submit", handlerSumbit);
